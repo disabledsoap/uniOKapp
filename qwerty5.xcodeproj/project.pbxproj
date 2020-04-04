@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE34B38A2424AF0000788DBD /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE34B3892424AF0000788DBD /* Task.swift */; };
+		AE34B38C2424D54400788DBD /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE34B38B2424D54400788DBD /* TaskTableViewCell.swift */; };
+		AE91977E242D033D00FADA29 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91977D242D033D00FADA29 /* Call.swift */; };
+		AE919780242D04A200FADA29 /* EditCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91977F242D04A200FADA29 /* EditCallViewController.swift */; };
+		AE920EF0242143AC00EDA494 /* Let's get acquaintedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE920EEF242143AC00EDA494 /* Let's get acquaintedViewController.swift */; };
+		AE920EF22421495600EDA494 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE920EF12421495600EDA494 /* TaskViewController.swift */; };
+		AE9F6E722422BCDC005281B1 /* ChooseImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9F6E712422BCDC005281B1 /* ChooseImageViewController.swift */; };
+		AECA59A22438B9580051E01B /* BadAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59A12438B9580051E01B /* BadAViewController.swift */; };
+		AECA59A42438BB000051E01B /* HappyAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59A32438BB000051E01B /* HappyAViewController.swift */; };
+		AECA59A62438BB9F0051E01B /* CalmAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59A52438BB9F0051E01B /* CalmAViewController.swift */; };
+		AECA59A82438BBC40051E01B /* SadAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59A72438BBC40051E01B /* SadAViewController.swift */; };
+		AECA59AC2438BC060051E01B /* NervousAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59AB2438BC060051E01B /* NervousAViewController.swift */; };
+		AECA59AE2438BC300051E01B /* AngryAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59AD2438BC300051E01B /* AngryAViewController.swift */; };
+		AECA59B02438BC4F0051E01B /* DepressedAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59AF2438BC4F0051E01B /* DepressedAViewController.swift */; };
+		AECA59B22438BE7B0051E01B /* HappyFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59B12438BE7B0051E01B /* HappyFViewController.swift */; };
+		AECA59B42438BEA90051E01B /* SadFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59B32438BEA90051E01B /* SadFViewController.swift */; };
+		AECA59B62438BEC40051E01B /* File in Resources */ = {isa = PBXBuildFile; fileRef = AECA59B52438BEC40051E01B /* File */; };
+		AECA59B82438BEE20051E01B /* File1 in Resources */ = {isa = PBXBuildFile; fileRef = AECA59B72438BEE20051E01B /* File1 */; };
+		AECA59BA2438BF580051E01B /* AnxietyFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59B92438BF580051E01B /* AnxietyFViewController.swift */; };
+		AECA59BC2438BF830051E01B /* NervousFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59BB2438BF830051E01B /* NervousFViewController.swift */; };
+		AECA59BE2438BFA70051E01B /* AngryFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA59BD2438BFA70051E01B /* AngryFViewController.swift */; };
+		AEE4042524165A29005BB2A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4042424165A29005BB2A5 /* AppDelegate.swift */; };
+		AEE4042A24165A29005BB2A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE4042824165A29005BB2A5 /* Main.storyboard */; };
+		AEE4042F24165A30005BB2A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE4042D24165A30005BB2A5 /* LaunchScreen.storyboard */; };
+		AEE4043A24165A30005BB2A5 /* qwerty5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4043924165A30005BB2A5 /* qwerty5Tests.swift */; };
+		AEEC96702436EDBD008E92DA /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC966F2436EDBD008E92DA /* TaskTableViewController.swift */; };
+		AEEC96782436F10E008E92DA /* Assets 19-02-25-274.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEC96772436F10E008E92DA /* Assets 19-02-25-274.xcassets */; };
+		AEFCB93C24379761003ED476 /* StartAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB93B24379761003ED476 /* StartAnalyzerViewController.swift */; };
+		AEFCB9402437A66A003ED476 /* AngryDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB93F2437A66A003ED476 /* AngryDViewController.swift */; };
+		AEFCB9422437AB2E003ED476 /* DepressedDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB9412437AB2E003ED476 /* DepressedDViewController.swift */; };
+		AEFCB9442437AC25003ED476 /* AnxiousDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB9432437AC25003ED476 /* AnxiousDViewController.swift */; };
+		AEFCB9462437AEE8003ED476 /* SadDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB9452437AEE8003ED476 /* SadDViewController.swift */; };
+		AEFCB9482437AF25003ED476 /* HappyDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB9472437AF25003ED476 /* HappyDViewController.swift */; };
+		AEFCB94A2437AF51003ED476 /* CalmDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB9492437AF51003ED476 /* CalmDViewController.swift */; };
+		AEFCB94C2437AFE2003ED476 /* IdkDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB94B2437AFE2003ED476 /* IdkDViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEE4043624165A30005BB2A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE4041924165A29005BB2A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEE4042024165A29005BB2A5;
+			remoteInfo = qwerty5;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE34B3892424AF0000788DBD /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		AE34B38B2424D54400788DBD /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		AE91977D242D033D00FADA29 /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		AE91977F242D04A200FADA29 /* EditCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCallViewController.swift; sourceTree = "<group>"; };
+		AE920EEF242143AC00EDA494 /* Let's get acquaintedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Let's get acquaintedViewController.swift"; sourceTree = "<group>"; };
+		AE920EF12421495600EDA494 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		AE9F6E712422BCDC005281B1 /* ChooseImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseImageViewController.swift; sourceTree = "<group>"; };
+		AECA59A12438B9580051E01B /* BadAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadAViewController.swift; sourceTree = "<group>"; };
+		AECA59A32438BB000051E01B /* HappyAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyAViewController.swift; sourceTree = "<group>"; };
+		AECA59A52438BB9F0051E01B /* CalmAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmAViewController.swift; sourceTree = "<group>"; };
+		AECA59A72438BBC40051E01B /* SadAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadAViewController.swift; sourceTree = "<group>"; };
+		AECA59AB2438BC060051E01B /* NervousAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NervousAViewController.swift; sourceTree = "<group>"; };
+		AECA59AD2438BC300051E01B /* AngryAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryAViewController.swift; sourceTree = "<group>"; };
+		AECA59AF2438BC4F0051E01B /* DepressedAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepressedAViewController.swift; sourceTree = "<group>"; };
+		AECA59B12438BE7B0051E01B /* HappyFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyFViewController.swift; sourceTree = "<group>"; };
+		AECA59B32438BEA90051E01B /* SadFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadFViewController.swift; sourceTree = "<group>"; };
+		AECA59B52438BEC40051E01B /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		AECA59B72438BEE20051E01B /* File1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File1; sourceTree = "<group>"; };
+		AECA59B92438BF580051E01B /* AnxietyFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyFViewController.swift; sourceTree = "<group>"; };
+		AECA59BB2438BF830051E01B /* NervousFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NervousFViewController.swift; sourceTree = "<group>"; };
+		AECA59BD2438BFA70051E01B /* AngryFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryFViewController.swift; sourceTree = "<group>"; };
+		AEE4042124165A29005BB2A5 /* qwerty5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qwerty5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE4042424165A29005BB2A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEE4042924165A29005BB2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEE4042E24165A30005BB2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEE4043024165A30005BB2A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEE4043524165A30005BB2A5 /* qwerty5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qwerty5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE4043924165A30005BB2A5 /* qwerty5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qwerty5Tests.swift; sourceTree = "<group>"; };
+		AEE4043B24165A30005BB2A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEEC966F2436EDBD008E92DA /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
+		AEEC96772436F10E008E92DA /* Assets 19-02-25-274.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets 19-02-25-274.xcassets"; sourceTree = SOURCE_ROOT; };
+		AEFCB93B24379761003ED476 /* StartAnalyzerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAnalyzerViewController.swift; sourceTree = "<group>"; };
+		AEFCB93F2437A66A003ED476 /* AngryDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryDViewController.swift; sourceTree = "<group>"; };
+		AEFCB9412437AB2E003ED476 /* DepressedDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepressedDViewController.swift; sourceTree = "<group>"; };
+		AEFCB9432437AC25003ED476 /* AnxiousDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxiousDViewController.swift; sourceTree = "<group>"; };
+		AEFCB9452437AEE8003ED476 /* SadDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadDViewController.swift; sourceTree = "<group>"; };
+		AEFCB9472437AF25003ED476 /* HappyDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyDViewController.swift; sourceTree = "<group>"; };
+		AEFCB9492437AF51003ED476 /* CalmDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmDViewController.swift; sourceTree = "<group>"; };
+		AEFCB94B2437AFE2003ED476 /* IdkDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdkDViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEE4041E24165A29005BB2A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE4043224165A30005BB2A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEE4041824165A29005BB2A5 = {
+			isa = PBXGroup;
+			children = (
+				AEE4042324165A29005BB2A5 /* qwerty5 */,
+				AEE4043824165A30005BB2A5 /* qwerty5Tests */,
+				AEE4042224165A29005BB2A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEE4042224165A29005BB2A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEE4042124165A29005BB2A5 /* qwerty5.app */,
+				AEE4043524165A30005BB2A5 /* qwerty5Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEE4042324165A29005BB2A5 /* qwerty5 */ = {
+			isa = PBXGroup;
+			children = (
+				AEE4042424165A29005BB2A5 /* AppDelegate.swift */,
+				AE920EEF242143AC00EDA494 /* Let's get acquaintedViewController.swift */,
+				AE920EF12421495600EDA494 /* TaskViewController.swift */,
+				AE34B3892424AF0000788DBD /* Task.swift */,
+				AE34B38B2424D54400788DBD /* TaskTableViewCell.swift */,
+				AEEC966F2436EDBD008E92DA /* TaskTableViewController.swift */,
+				AE9F6E712422BCDC005281B1 /* ChooseImageViewController.swift */,
+				AECA59B72438BEE20051E01B /* File1 */,
+				AE91977D242D033D00FADA29 /* Call.swift */,
+				AE91977F242D04A200FADA29 /* EditCallViewController.swift */,
+				AECA59B52438BEC40051E01B /* File */,
+				AEFCB93B24379761003ED476 /* StartAnalyzerViewController.swift */,
+				AEFCB9412437AB2E003ED476 /* DepressedDViewController.swift */,
+				AECA59AF2438BC4F0051E01B /* DepressedAViewController.swift */,
+				AEFCB93F2437A66A003ED476 /* AngryDViewController.swift */,
+				AECA59AD2438BC300051E01B /* AngryAViewController.swift */,
+				AECA59BD2438BFA70051E01B /* AngryFViewController.swift */,
+				AEFCB9432437AC25003ED476 /* AnxiousDViewController.swift */,
+				AECA59B92438BF580051E01B /* AnxietyFViewController.swift */,
+				AECA59AB2438BC060051E01B /* NervousAViewController.swift */,
+				AECA59BB2438BF830051E01B /* NervousFViewController.swift */,
+				AEFCB9452437AEE8003ED476 /* SadDViewController.swift */,
+				AECA59A72438BBC40051E01B /* SadAViewController.swift */,
+				AECA59B32438BEA90051E01B /* SadFViewController.swift */,
+				AEFCB9472437AF25003ED476 /* HappyDViewController.swift */,
+				AECA59A32438BB000051E01B /* HappyAViewController.swift */,
+				AECA59B12438BE7B0051E01B /* HappyFViewController.swift */,
+				AEFCB9492437AF51003ED476 /* CalmDViewController.swift */,
+				AECA59A52438BB9F0051E01B /* CalmAViewController.swift */,
+				AEFCB94B2437AFE2003ED476 /* IdkDViewController.swift */,
+				AECA59A12438B9580051E01B /* BadAViewController.swift */,
+				AEE4042824165A29005BB2A5 /* Main.storyboard */,
+				AEE4042D24165A30005BB2A5 /* LaunchScreen.storyboard */,
+				AEEC96772436F10E008E92DA /* Assets 19-02-25-274.xcassets */,
+				AEE4043024165A30005BB2A5 /* Info.plist */,
+			);
+			path = qwerty5;
+			sourceTree = "<group>";
+		};
+		AEE4043824165A30005BB2A5 /* qwerty5Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AEE4043924165A30005BB2A5 /* qwerty5Tests.swift */,
+				AEE4043B24165A30005BB2A5 /* Info.plist */,
+			);
+			path = qwerty5Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEE4042024165A29005BB2A5 /* qwerty5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEE4043E24165A30005BB2A5 /* Build configuration list for PBXNativeTarget "qwerty5" */;
+			buildPhases = (
+				AEE4041D24165A29005BB2A5 /* Sources */,
+				AEE4041E24165A29005BB2A5 /* Frameworks */,
+				AEE4041F24165A29005BB2A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qwerty5;
+			productName = qwerty5;
+			productReference = AEE4042124165A29005BB2A5 /* qwerty5.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEE4043424165A30005BB2A5 /* qwerty5Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEE4044124165A30005BB2A5 /* Build configuration list for PBXNativeTarget "qwerty5Tests" */;
+			buildPhases = (
+				AEE4043124165A30005BB2A5 /* Sources */,
+				AEE4043224165A30005BB2A5 /* Frameworks */,
+				AEE4043324165A30005BB2A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEE4043724165A30005BB2A5 /* PBXTargetDependency */,
+			);
+			name = qwerty5Tests;
+			productName = qwerty5Tests;
+			productReference = AEE4043524165A30005BB2A5 /* qwerty5Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEE4041924165A29005BB2A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Арсений";
+				TargetAttributes = {
+					AEE4042024165A29005BB2A5 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					AEE4043424165A30005BB2A5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AEE4042024165A29005BB2A5;
+					};
+				};
+			};
+			buildConfigurationList = AEE4041C24165A29005BB2A5 /* Build configuration list for PBXProject "qwerty5" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEE4041824165A29005BB2A5;
+			productRefGroup = AEE4042224165A29005BB2A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEE4042024165A29005BB2A5 /* qwerty5 */,
+				AEE4043424165A30005BB2A5 /* qwerty5Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEE4041F24165A29005BB2A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECA59B62438BEC40051E01B /* File in Resources */,
+				AEE4042F24165A30005BB2A5 /* LaunchScreen.storyboard in Resources */,
+				AEEC96782436F10E008E92DA /* Assets 19-02-25-274.xcassets in Resources */,
+				AEE4042A24165A29005BB2A5 /* Main.storyboard in Resources */,
+				AECA59B82438BEE20051E01B /* File1 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE4043324165A30005BB2A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEE4041D24165A29005BB2A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECA59B02438BC4F0051E01B /* DepressedAViewController.swift in Sources */,
+				AE920EF0242143AC00EDA494 /* Let's get acquaintedViewController.swift in Sources */,
+				AECA59BA2438BF580051E01B /* AnxietyFViewController.swift in Sources */,
+				AECA59AE2438BC300051E01B /* AngryAViewController.swift in Sources */,
+				AE91977E242D033D00FADA29 /* Call.swift in Sources */,
+				AE9F6E722422BCDC005281B1 /* ChooseImageViewController.swift in Sources */,
+				AECA59BC2438BF830051E01B /* NervousFViewController.swift in Sources */,
+				AEFCB9442437AC25003ED476 /* AnxiousDViewController.swift in Sources */,
+				AEFCB94A2437AF51003ED476 /* CalmDViewController.swift in Sources */,
+				AECA59A62438BB9F0051E01B /* CalmAViewController.swift in Sources */,
+				AEFCB9482437AF25003ED476 /* HappyDViewController.swift in Sources */,
+				AECA59A22438B9580051E01B /* BadAViewController.swift in Sources */,
+				AECA59B42438BEA90051E01B /* SadFViewController.swift in Sources */,
+				AEFCB9422437AB2E003ED476 /* DepressedDViewController.swift in Sources */,
+				AE919780242D04A200FADA29 /* EditCallViewController.swift in Sources */,
+				AEEC96702436EDBD008E92DA /* TaskTableViewController.swift in Sources */,
+				AE34B38C2424D54400788DBD /* TaskTableViewCell.swift in Sources */,
+				AECA59A42438BB000051E01B /* HappyAViewController.swift in Sources */,
+				AE34B38A2424AF0000788DBD /* Task.swift in Sources */,
+				AEFCB94C2437AFE2003ED476 /* IdkDViewController.swift in Sources */,
+				AEE4042524165A29005BB2A5 /* AppDelegate.swift in Sources */,
+				AECA59B22438BE7B0051E01B /* HappyFViewController.swift in Sources */,
+				AEFCB9462437AEE8003ED476 /* SadDViewController.swift in Sources */,
+				AECA59A82438BBC40051E01B /* SadAViewController.swift in Sources */,
+				AE920EF22421495600EDA494 /* TaskViewController.swift in Sources */,
+				AECA59BE2438BFA70051E01B /* AngryFViewController.swift in Sources */,
+				AEFCB9402437A66A003ED476 /* AngryDViewController.swift in Sources */,
+				AEFCB93C24379761003ED476 /* StartAnalyzerViewController.swift in Sources */,
+				AECA59AC2438BC060051E01B /* NervousAViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE4043124165A30005BB2A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEE4043A24165A30005BB2A5 /* qwerty5Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEE4043724165A30005BB2A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEE4042024165A29005BB2A5 /* qwerty5 */;
+			targetProxy = AEE4043624165A30005BB2A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEE4042824165A29005BB2A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEE4042924165A29005BB2A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEE4042D24165A30005BB2A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEE4042E24165A30005BB2A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEE4043C24165A30005BB2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEE4043D24165A30005BB2A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEE4043F24165A30005BB2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UURHQ5YB5;
+				INFOPLIST_FILE = qwerty5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qwerty.qwerty5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AEE4044024165A30005BB2A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UURHQ5YB5;
+				INFOPLIST_FILE = qwerty5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qwerty.qwerty5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AEE4044224165A30005BB2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UURHQ5YB5;
+				INFOPLIST_FILE = qwerty5Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qwerty.qwerty5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qwerty5.app/qwerty5";
+			};
+			name = Debug;
+		};
+		AEE4044324165A30005BB2A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UURHQ5YB5;
+				INFOPLIST_FILE = qwerty5Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qwerty.qwerty5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qwerty5.app/qwerty5";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEE4041C24165A29005BB2A5 /* Build configuration list for PBXProject "qwerty5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEE4043C24165A30005BB2A5 /* Debug */,
+				AEE4043D24165A30005BB2A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEE4043E24165A30005BB2A5 /* Build configuration list for PBXNativeTarget "qwerty5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEE4043F24165A30005BB2A5 /* Debug */,
+				AEE4044024165A30005BB2A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEE4044124165A30005BB2A5 /* Build configuration list for PBXNativeTarget "qwerty5Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEE4044224165A30005BB2A5 /* Debug */,
+				AEE4044324165A30005BB2A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEE4041924165A29005BB2A5 /* Project object */;
+}
