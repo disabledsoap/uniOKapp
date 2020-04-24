@@ -10,14 +10,27 @@ import UIKit
 
 class AngryFViewController: UIViewController {
 
+    @IBOutlet weak var FinishButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        FinishButton.layer.cornerRadius = 28
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func FinishAngry(_ sender: UIButton) {
-        performSegue(withIdentifier: "ToMainScreen", sender: self)
+        for controller in self.navigationController!.viewControllers as Array {
+            if controller.isKind(of: StartAnalyzerViewController.self) {
+                _ =  self.navigationController!.popToViewController(controller, animated: true)
+                break
+            }
+        }
+    ColorValueVC.shared.ColorValue = 1
+        print(ColorValueVC.shared.ColorValue)
+        let CalendarVC = CalendarViewController()
+       
     }
     
     /*

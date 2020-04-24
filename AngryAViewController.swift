@@ -15,7 +15,7 @@ class AngryAViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Continue.layer.cornerRadius = 18
+        Continue.layer.cornerRadius = 25
         
         // Do any additional setup after loading the view.
     }

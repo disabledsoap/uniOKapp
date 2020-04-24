@@ -1,5 +1,5 @@
 //
-//  CalmAViewController.swift
+//  SadFViewController.swift
 //  qwerty5
 //
 //  Created by Арсений on 04.04.2020.
@@ -8,19 +8,29 @@
 
 import UIKit
 
-class CalmAViewController: UIViewController {
+class SadFViewController: UIViewController {
 
-    @IBOutlet weak var Continue: UIButton!
+    @IBOutlet weak var FinishButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        Continue.layer.cornerRadius = 25
-        
+FinishButton.layer.cornerRadius = 28
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func Finish(_ sender: Any) {
+        for controller in self.navigationController!.viewControllers as Array {
+            if controller.isKind(of: StartAnalyzerViewController.self) {
+                _ =  self.navigationController!.popToViewController(controller, animated: true)
+                break
+            }
+        }
+    ColorValueVC.shared.ColorValue = 4
+        let CalendarVC = CalendarViewController()
+      
 
+    }
+    
     /*
     // MARK: - Navigation
 

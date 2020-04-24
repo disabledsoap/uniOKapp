@@ -10,14 +10,25 @@ import UIKit
 
 class AnxietyFViewController: UIViewController {
 
+    @IBOutlet weak var FinishButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    FinishButton.layer.cornerRadius = 28
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func FinishAnxiety(_ sender: UIButton) {
-        performSegue(withIdentifier: "ToMainScreen", sender: UIButton.self)
+    @IBAction func FinishAnxiety(_ sender: Any) {
+        for controller in self.navigationController!.viewControllers as Array {
+            if controller.isKind(of: StartAnalyzerViewController.self) {
+                _ =  self.navigationController!.popToViewController(controller, animated: true)
+                break
+            }
+        }
+      ColorValueVC.shared.ColorValue = 2
+        let CalendarVC = CalendarViewController()
+       
+
     }
     
     /*

@@ -1,5 +1,5 @@
 //
-//  CalmAViewController.swift
+//  NervousAViewController.swift
 //  qwerty5
 //
 //  Created by Арсений on 04.04.2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CalmAViewController: UIViewController {
+class NervousAViewController: UIViewController {
 
     @IBOutlet weak var Continue: UIButton!
     

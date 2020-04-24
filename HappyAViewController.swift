@@ -1,5 +1,5 @@
 //
-//  CalmAViewController.swift
+//  HappyAViewController.swift
 //  qwerty5
 //
 //  Created by Арсений on 04.04.2020.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class CalmAViewController: UIViewController {
+class HappyAViewController: UIViewController {
 
     @IBOutlet weak var Continue: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         Continue.layer.cornerRadius = 25
         
         // Do any additional setup after loading the view.

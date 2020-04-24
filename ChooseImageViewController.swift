@@ -26,49 +26,49 @@ class ChooseImageViewController: UIViewController {
     
     @IBAction func image2Choosed(_ sender: UIButton) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "pusheenCoffee")
+        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "lemonade")
          navigationController?.popViewController(animated: true)
     }
     
     @IBAction func image1Choosed(_ sender: UIButton) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "pusheenBath")
+        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "FluffyBath")
          navigationController?.popViewController(animated: true)
     }
     
     @IBAction func image3Choosed(_ sender: UIButton) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "pusheenCook")
+        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "FluffySleep")
          navigationController?.popViewController(animated: true)
     }
     
     @IBAction func image4Choosed(_ sender: UIButton) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "pusheenEats")
+        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "FluffyPlay")
          navigationController?.popViewController(animated: true)
     }
     
     @IBAction func image5Choosed(_ sender: UIButton) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "pusheenRead")
+        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "lemonade")
          navigationController?.popViewController(animated: true)
     }
     
     @IBAction func image6Choosed(_ sender: UIButton) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "pusheenMom")
+        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "FluffyLove")
          navigationController?.popViewController(animated: true)
     }
     
     @IBAction func image7Choosed(_ sender: UIButton) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "pusheenPasear")
+        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "FluffyComputer")
          navigationController?.popViewController(animated: true)
     }
     
     @IBAction func image8Choosed(_ sender: UIButton) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "pusheenPlay")
+        appDelegate.TaskEditor_VC?.photoImageView.image = UIImage(named: "FluffyBath")
         navigationController?.popViewController(animated: true)
     }
     

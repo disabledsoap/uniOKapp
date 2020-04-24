@@ -14,14 +14,12 @@ class DepressedDViewController: UIViewController {
     @IBOutlet weak var definition2: UILabel!
     @IBOutlet weak var definition3: UILabel!
     
+    @IBOutlet weak var DepressedPic: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(ToTheAngry(swipe:)))
-        rightSwipe.direction = UISwipeGestureRecognizer.Direction.right
-        self.view.addGestureRecognizer(rightSwipe)
-        
+     DepressedPic.layer.cornerRadius = 28
         
         
         let Advicepush = UILongPressGestureRecognizer(target: self, action: #selector(ToTheDepressedAdvice(longpress:)))
@@ -38,9 +36,7 @@ class DepressedDViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    @objc func ToTheAngry(swipe:UISwipeGestureRecognizer){
-        performSegue(withIdentifier: "DepressedtoAngry", sender: self)
-    }
+   
     
     @objc func ToTheDepressedAdvice(longpress:UILongPressGestureRecognizer){
         performSegue(withIdentifier: "Depressedpush", sender: self)

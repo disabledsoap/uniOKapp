@@ -1,5 +1,5 @@
 //
-//  AnxiousDViewController.swift
+//  SadDViewController.swift
 //  qwerty5
 //
 //  Created by Арсений on 03.04.2020.
@@ -8,19 +8,20 @@
 
 import UIKit
 
-class AnxiousDViewController: UIViewController {
+class SadDViewController: UIViewController {
 
     @IBOutlet weak var definition1: UILabel!
     @IBOutlet weak var definition2: UILabel!
+    @IBOutlet weak var definition3: UILabel!
     
-    @IBOutlet weak var AnxietyPic: UIImageView!
+    @IBOutlet weak var SadPic: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-   AnxietyPic.layer.cornerRadius = 28
+  SadPic.layer.cornerRadius = 28
         
-        let Advicepush = UILongPressGestureRecognizer(target: self, action: #selector(ToTheAnxiousAdvice(longpress:)))
+        let Advicepush = UILongPressGestureRecognizer(target: self, action: #selector(ToTheSadAdvice(longpress:)))
         self.view.addGestureRecognizer(Advicepush)
         
         definition1.layer.cornerRadius = 13
@@ -29,14 +30,17 @@ class AnxiousDViewController: UIViewController {
         definition2.layer.cornerRadius = 13
         definition2.layer.masksToBounds = true
         
-       
+        definition3.layer.cornerRadius = 13
+        definition3.layer.masksToBounds = true
+        
         
         // Do any additional setup after loading the view.
     }
-
     
-    @objc func ToTheAnxiousAdvice(longpress:UILongPressGestureRecognizer){
-        performSegue(withIdentifier: "Anxiouspush", sender: self)
+   
+    
+    @objc func ToTheSadAdvice(longpress:UILongPressGestureRecognizer){
+        performSegue(withIdentifier: "Sadpush", sender: self)
     }
     
     /*

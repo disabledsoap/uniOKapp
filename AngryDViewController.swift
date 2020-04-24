@@ -14,16 +14,12 @@ class AngryDViewController: UIViewController {
     @IBOutlet weak var definition2: UILabel!
     @IBOutlet weak var definition3: UILabel!
     
+    @IBOutlet weak var AngryPic: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(ToTheAnxious(swipe:)))
-        rightSwipe.direction = UISwipeGestureRecognizer.Direction.right
-        self.view.addGestureRecognizer(rightSwipe)
-        
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(ToTheDepressed(swipe:)))
-        leftSwipe.direction = UISwipeGestureRecognizer.Direction.left
-        self.view.addGestureRecognizer(leftSwipe)
+      AngryPic.layer.cornerRadius = 28
         
         let Advicepush = UILongPressGestureRecognizer(target: self, action: #selector(ToTheAngryAdvice(longpress:)))
         self.view.addGestureRecognizer(Advicepush)
@@ -38,14 +34,7 @@ class AngryDViewController: UIViewController {
         definition3.layer.masksToBounds = true
         
         // Do any additional setup after loading the view.
-    }
-    @objc func ToTheAnxious(swipe:UISwipeGestureRecognizer){
-        performSegue(withIdentifier: "AngrytoAnxious", sender: self)
-    }
-    
-    @objc func ToTheDepressed(swipe:UISwipeGestureRecognizer){
-        performSegue(withIdentifier: "AngrytoDepressed", sender: self)
-    }
+  }
     
     @objc func ToTheAngryAdvice(longpress:UILongPressGestureRecognizer){
         performSegue(withIdentifier: "Angrypush", sender: self)

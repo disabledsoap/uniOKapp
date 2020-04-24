@@ -1,5 +1,5 @@
 //
-//  CalmAViewController.swift
+//  SadAViewController.swift
 //  qwerty5
 //
 //  Created by Арсений on 04.04.2020.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class CalmAViewController: UIViewController {
+class SadAViewController: UIViewController {
 
     @IBOutlet weak var Continue: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,26 +1,34 @@
 //
-//  CalmAViewController.swift
+//  StartAnalyzerViewController.swift
 //  qwerty5
 //
-//  Created by Арсений on 04.04.2020.
+//  Created by Арсений on 03.04.2020.
 //  Copyright © 2020 Арсений. All rights reserved.
 //
 
 import UIKit
-
-class CalmAViewController: UIViewController {
-
-    @IBOutlet weak var Continue: UIButton!
+class StartAnalyzerViewController: UIViewController {
+    
+        var ColorValue: Int = 0
+    
+    @IBOutlet weak var StartButton: UIButton!
+    @IBOutlet weak var KUkuView: UIView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        Continue.layer.cornerRadius = 25
-        
+    
+    StartButton.layer.cornerRadius = 20
+    
+    KUkuView.layer.cornerRadius = 18
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func SetValue(_ sender: UIButton) {
+       ColorValueVC.shared.ColorValue = 0
+    }
+    
     /*
     // MARK: - Navigation
 
