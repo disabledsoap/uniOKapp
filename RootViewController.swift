@@ -15,9 +15,17 @@ class RootViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        GOButton.isEnabled = false
+        if NameTextField.hasText {
+            GOButton.isEnabled = true
+            print("text field not empty")
+        } else {
+            GOButton.isEnabled = false
+            print("text field empty")
+        }
         self.HidesKeyboard()
-        updateGOButtonState()
+      
+   
+        
         CheckForSavedName()
         // Handle the text field’s user input through delegate callbacks.
         NameTextField.delegate = self
@@ -25,22 +33,6 @@ class RootViewController: UIViewController, UITextFieldDelegate {
         imageUIImage.layer.cornerRadius = 10
         imageUIImage.clipsToBounds = true
         }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        // Disable the Save button while editing.
-        GOButton.isEnabled = false
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        updateGOButtonState()
-       
-    }
-    
-    private func updateGOButtonState() {
-        // Disable the Save button if the text field is empty.
-        let text = NameTextField.text ?? ""
-        GOButton.isEnabled = !text.isEmpty
-    }
     
     func HidesKeyboard(){
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -53,14 +45,51 @@ class RootViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func SaveName(_ sender: UIButton) {
-        defaults.set(NameTextField.text ?? "", forKey: Name.NameTextField)
+      //  defaults.set(NameTextField.text ?? "", forKey: Name.NameTextField)
         
-        NameViewController.sharedd.Name = NameTextField.text ?? ""
+      //  NameViewController.sharedd.Name = NameTextField.text ?? ""
+        
+        if (NameTextField.text!.count) >= 2 {
+        defaults.set(NameTextField.text!, forKey: "savename")
+        dismiss(animated: true, completion: nil)
+        } else {
+            showDialog(titleStr: "Try a")
+        }
     }
     
     func CheckForSavedName(){
         
          NameTextField.text = defaults.value(forKey: Name.NameTextField) as? String ?? ""
+    }
+    
+    func TextFieldEmpty() {
+        if NameTextField.hasText {
+            GOButton.isEnabled = true
+            print("text field not empty")
+        } else {
+            GOButton.isEnabled = false
+            print("text field empty")
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+       TextFieldEmpty()
+    }
+    
+    func showDialog(titleStr : String) {
+        let alert = UIAlertController(title: titleStr, message: nil, preferredStyle: .alert)
+        
+        alert.view.tintColor = .black
+        
+        let cancel = UIAlertAction(title: "Ok", style: .default) { (_) in
+            print("Tapted")
+        }
+        
+        alert.addAction(cancel)
+        
+        present(alert, animated: true)
+        
+        
     }
     
 }

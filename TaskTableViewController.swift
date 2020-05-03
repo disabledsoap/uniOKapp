@@ -9,6 +9,8 @@ import os.log
 import UIKit
 
 class TaskTableViewController: UITableViewController {
+    
+    let loadDefaults = UserDefaults.standard
 
     
     var tasks = [Task]()
@@ -48,6 +50,14 @@ class TaskTableViewController: UITableViewController {
         default:
             break
         }*/
+        
+        if let load = loadDefaults.string(forKey: "savename") {
+            print("Save name", load)
+        } else {
+           performSegue(withIdentifier: "firstVC", sender: self)
+        }
+        
+       
         
         
         // Use the edit button item provided by the table view controller.
@@ -177,7 +187,8 @@ class TaskTableViewController: UITableViewController {
             let selectedTask = tasks[indexPath.row]
             taskDetailViewController.task = selectedTask
         default:
-            fatalError("Unexpected Segue Identifier; \(segue.identifier)")
+           // fatalError("Unexpected Segue Identifier; \(segue.identifier)")
+            print()
         }
     }
     
