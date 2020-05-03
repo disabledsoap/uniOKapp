@@ -17,19 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var Call_VC: Call!
     var Calendar_VC: CalendarViewController!
    
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-        
-        let defaults = UserDefaults.standard
-        if defaults.object(forKey: "isFirstTime") == nil {
-            defaults.set("No", forKey:"isFirstTime")
-            defaults.synchronize()
-            let storyboard = UIStoryboard(name: "main", bundle: nil) //Write your storyboard name
-            let viewController = storyboard.instantiateViewController(withIdentifier: "RootViewController") as! RootViewController
-            self.window!.rootViewController = viewController
-            self.window!.makeKeyAndVisible()
-        }
-        return true
-    }
+ 
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -56,11 +44,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-extension AppDelegate {
-    static var shared: AppDelegate {
-        return UIApplication.shared.delegate as! AppDelegate
-    }
-    var rootViewController: RootViewController {
-        return window!.rootViewController as! RootViewController
-    }
-}
+

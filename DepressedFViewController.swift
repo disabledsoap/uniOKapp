@@ -20,7 +20,7 @@ class DepressedFViewController: UIViewController {
                 break
             }
         }
-        ColorValueVC.shared.ColorValue = 6
+        ColorValueVC.shared.ColorValue = 7
         print(ColorValueVC.shared.ColorValue)
         let CalendarVC = CalendarViewController()
         
